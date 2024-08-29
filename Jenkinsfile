@@ -5,7 +5,7 @@ pipeline {
         stage('development') {
             steps {
                 echo 'Hello World-development'
-                git clone 'https://github.com/tanishkarakte21/City-Weather-app.git'
+                bat 'git clone \'https://github.com/tanishkarakte21/City-Weather-app.git\''
             }
         }
         stage('QA'){
