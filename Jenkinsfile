@@ -5,12 +5,7 @@ pipeline {
         stage('development') {
             steps {
                 echo 'Hello World-development'
-                
-                bat '''if exist City-Weather-app (
-                 echo file exists
-                ) else (
-                bat 'git clone https://github.com/tanishkarakte21/City-Weather-app.git'
-                )'''
+                git clone https://github.com/tanishkarakte21/City-Weather-app.git'
             }
         }
         stage('QA'){
